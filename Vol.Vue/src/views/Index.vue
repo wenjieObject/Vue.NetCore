@@ -125,7 +125,7 @@ export default {
     }
     let userInfo = this.$store.getters.getUserInfo();
     this.userName = userInfo.userName;
-    this.userImg = this.base.getImgSrc(userInfo.img, this.http.ipAddress);
+    //this.userImg = this.base.getImgSrc(userInfo.img, this.http.ipAddress);
     $vueIndex = this;
     this.showTime();
     setInterval(function() {
@@ -174,7 +174,7 @@ export default {
     },
     to(item) {
       if (item.path == "#") {
-        window.open("https://github.com/cq-panda/Vue.NetCore");
+        //window.open("https://github.com/cq-panda/Vue.NetCore");
         return;
       }
 
